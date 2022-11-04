@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comedor Yuumi</title>
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <header class="flex-col-center">
+    <h1>Comedor Yuumi</h1>
+      <img src="./assets/img/Pescaderia Yuumi.png" alt="Logo de Pescaderia Yuumi" class="logo_header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#platos">Platos</a></li>
+        <li><a href="#sucursales">Nuestras sucursales</a></li>
+        <li><a href="#pedidos">Pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <hr>
+    <h2>Conoce nuestros platos</h2>
+    <section class="platos_section" id="platos">
+      <div>
+        <h3>Menú</h3>
+        <ul class="menu_list">
+          <li>Medallones de merluza <p class="precio">$700</p></li>
+          <li>Milanesa de merluza <p class="precio">$700</p></li>
+          <li>Salmon ahumado <p class="precio">$700</p></li>
+          <li>Camaron cocido <p class="precio">$800</p></li>
+          <li>Tentaculos de calamar <p class="precio">$900</p></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Especiales</h3>
+        <ul class="especiales_list">
+          <li>Medallones de espinaca y pollo  <p class="precio">$800</p></li>
+          <li>Medallones de jamon y queso  <p class="precio">$800</p></li>
+          <li>Merluza a la napolitana  <p class="precio">$900</p></li>
+          <li>Hamburguesa triple de medallones de jamon y queso  <p class="precio">$1000</p></li>
+        </ul>
+      </div>
+      <div class="guarniciones_container">
+        <h3>Guarniciones</h3>
+        <ul class="guarniciones_list">
+          <li>Arroz</li>
+          <li>Puré de papas</li>
+          <li>Ensalada de tomate y lechuga</li>
+          <li>Papas Fritas</li>
+          <li><span>Guarnición Adicional <p class="precio">$150</p></span></li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section class="sucursales-section">
+      <h2 id="sucursales">Nuestras sucursales</h2>
+      <h3>Sucursal zona Oeste</h3>
+      <p>Horarios: de Lunes a Viernes 8:00 - 16:00 </p>        
+      <div class="mapas">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1810.7837221064865!2d-65.4201243281857!3d-24.810261049897836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3c4a1291ecb%3A0xe02e8d4ba4d74f11!2sAv.%20Chile%201601%2C%20Salta!5e0!3m2!1ses-419!2sar!4v1666131497690!5m2!1ses-419!2sar" width="80%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <h3>Sucursal zona Centro</h3>
+      <p>Horarios: Sabados y Domingos de 8:00 - 16:00 y 18:00 - 00:00</p>
+      <div class="mapas">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.516873571534!2d-65.40501258539017!3d-24.777748713515383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc39537ace4d9%3A0x99894f2fd75c7703!2sToribio%20Ted%C3%ADn%2015%2C%20Salta!5e0!3m2!1ses-419!2sar!4v1666131678810!5m2!1ses-419!2sar" width="80%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+        <h3>Sucursal zona Norte</h3>
+        <P>Horarios: de Lunes a Viernes 8:00 - 16:00</P>
+      <div class="mapas">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115903.57092839785!2d-65.50066940157049!3d-24.795912659104125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses-419!2sar!4v1666131734422!5m2!1ses-419!2sar" width="80%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <hr>
+    </section>
+    <section class="diferenciales">
+      <h2>Nuestros diferenciales</h2>
+      <ul class="diferenciales_list">
+        <li>Menú economico</li>
+        <li>3 Sucursales con alto alcance</li>
+        <li>Sopa y Postre incluido</li>
+      </ul>
+    </section>
+    <hr>
+    <form action="">
+      <h2 id="pedidos">Haz tu pedido aquí</h2>
+      <p>¿De que sucursal pides?</p>
+      <select name="sucursales" id="form-sucursales">
+        <option value="oeste" selected>Oeste</option>
+        <option value="centro">Centro</option>
+        <option value="norte">Norte</option>
+      </select>
+
+      <div class="form-container">
+        <p>¿Que menú deseas?</p>
+        <span>
+          <input type="checkbox" id="meMerluza" name="meMerluza" value="meMerluza">
+          <label for="meMerluza">Medallones de merluza</label>
+          <input type="number" id="meMerluzaNumber" name="meMerluzaNumber" placeholder="Cantidad">
+        </span>
+  
+        <span>
+          <input type="checkbox" id="milaMerluza" name="milaMerluza" value="milaMerluza">
+          <label for="">Milanesa de merluza</label>
+          <input type="number" id="milaMerluzaNumber" name="milaMerluzaNumber" placeholder="Cantidad">
+        </span>
+  
+        <span>
+          <input type="checkbox" id="salmonAhu" name="salmonAhu" value="salmonAhu">
+          <label for="salmonAhu">Salmón ahumado</label>
+          <input type="number" id="salmonAhuNumber" name="salmonAhuNumber" placeholder="Cantidad">
+        </span>
+  
+        <span>
+          <input type="checkbox" id="camaronCo" name="camaronCo" value="camaronCo">
+          <label for="camaronCo">Camarón cocido</label>
+          <input type="number" id="camaronCoNumber" name="camaronCoNumber" placeholder="Cantidad">
+        </span>
+  
+        <span>
+          <input type="checkbox" id="tentaculosCalamar" name="tentaculosCalamar" value="tentaculosCalamar">
+          <label for="tentaculosCalamar">Tentaculos de calamar</label>
+          <input type="number" id="tentaculosCalamarNumber" name="tentaculosCalamarNumber" placeholder="Cantidad">
+        </span>
+  
+        <span>
+          <input type="checkbox" id="meEspiyPollo" name="meEspiyPollo" value="meEspiyPollo">
+          <label for="meEspiyPollo">Medallones de espinaca y pollo</label>
+          <input type="number" id="meEspiyPolloNumber" name="meEspiyPolloNumber" placeholder="Cantidad">
+        </span>
+  
+        <span>
+          <input type="checkbox" id="meJamyQueso" name="meJamyQueso" value="meJamyQueso">
+          <label for="meJamyQueso">Medallones de jamon y queso</label>
+          <input type="number" id="meJamyQuesoNumber" name="meJamyQuesoNumber" placeholder="Cantidad">
+        </span>
+  
+        <span>
+          <input type="checkbox" id="merluzaNapo" name="merluzaNapo" value="merluzaNapo">
+          <label for="merluzaNapo">Merluza a la napolitana</label>
+          <input type="number" id="merluzaNapoNumber" name="merluzaNapoNumber" placeholder="Cantidad">
+        </span>
+  
+        <span>
+          <input type="checkbox" id="hamTripleMeJamoYQueso" name="hamTripleMeJamoYQueso" value="hamTripleMeJamoYQueso">
+          <label for="hamTripleMeJamoYQueso">Hamburguesa triple de medallones de jamon y queso</label>
+          <input type="number" id="hamTripleMeJamoYQuesoNumber" name="hamTripleMeJamoYQuesoNumber" placeholder="Cantidad">
+        </span>
+  
+        <p>¿Que guarnicion/es?</p>
+        <span>
+          <input type="checkbox" id="arroz" name="arroz" value="arroz">
+          <label for="arroz">Arroz</label>
+          <input type="number" id="arrozNumber" name="arrozNumber" placeholder="Cantidad">
+        </span>
+  
+        <span>
+          <input type="checkbox" id="pure" name="pure" value="pure">
+          <label for="pure">Pure de papas</label>
+          <input type="number" id="pureNumber" name="pureNumber" placeholder="Cantidad">
+        </span>
+  
+        <span>
+          <input type="checkbox" id="ensalada" name="ensalada" value="ensalada">
+          <label for="ensalada">Ensalada de tomate y lechuga</label>
+          <input type="number" id="ensaladaNumber" name="ensaladaNumber" placeholder="Cantidad">
+        </span>
+  
+        <span>
+          <input type="checkbox" id="papasFritas" name="papasFritas" value="papasFritas">
+          <label for="papasFritas">Papas Fritas</label>
+          <input type="number" id="papasFritasNumber" name="papasFritasNumber" placeholder="Cantidad">
+        </span>
+
+      </div>
+
+      <p>Sus datos:</p>
+
+      <div class="flex-col-center">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?">
+  
+        <label for="telefono">Teléfono: </label>
+        <input type="text" id="telefono" name="telefono" placeholder="¿Cúal es tu numero de teléfono?">
+  
+        <label for="direccion">Dirección: </label>
+        <input type="text" id="direccion" name="direccion" placeholder="¿Cúal es tu dirección?">
+      </div>
+
+      <button type="submit">Enviar Pedido</button>
+
+    </form>
+    <hr>
+  </main>
+  <footer class="flex-col-center">
+    <img src="./assets/img/Pescaderia Yuumi.png" alt="Logo de Pescaderia Yuumi">
+    <p >&copy Copyright Comedor Yuumi - 2022</p>
+  </footer>
+</body>
+</html>

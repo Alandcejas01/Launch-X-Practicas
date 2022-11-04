@@ -1,0 +1,296 @@
+body {
+  background-color: #002e4e;
+  color: #fff;
+}
+
+hr {
+  margin: 0em;
+  width: auto;
+}
+
+
+/* Clases Genericas */
+
+.flex-col-center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-row-center {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+/* Header */
+
+h1 {
+  color: #fff;
+}
+
+h2,
+h3 {
+  margin: 0em;
+  padding-top: 0.5em;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+p {
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #002945;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0em;
+}
+.navbar li {
+  margin: 0.625rem;
+  text-align: center;
+  border-bottom: 0.1em solid #fff;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.logo_header {
+  width: 30%;
+}
+
+/* Platos Section */
+
+ul {
+  padding: 0em;
+}
+
+.menu_list,
+.especiales_list,
+.guarniciones_list {
+  margin: 1em;;
+}
+
+.menu_list {
+  background-color: #002e4e;
+}
+
+.especiales_list {
+ background-color: #003a61;
+}
+
+.guarniciones_list {
+  background-color: #00406c;
+}
+
+.menu_list li,
+.especiales_list li,
+.guarniciones_list li {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 0.09375em solid #fff;
+}
+
+.guarniciones_list li {
+  justify-content: center;
+}
+
+.guarniciones_list span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.guarniciones_list p {
+  margin-top: 0.8em;
+}
+
+.precio {
+  margin: 0em;
+  font-weight: bold;
+}
+
+/* Sucursales section*/
+
+.sucursales-section {
+  background-color: #003356;
+}
+
+.mapas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 1em 0;
+}
+
+/* Diferenciales */
+.diferenciales {
+  background-color: #00406c;
+  padding: 0em 0.7em 1em 0.7em;
+}
+.diferenciales_list{
+  border: 0.09375em solid #fff;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0.4em;
+  
+}
+
+.diferenciales_list li {
+  font-weight: bold;
+  text-align: center;
+  padding: 0.15em;
+  font-size: 0.9em;
+}
+.diferenciales_list li:nth-child(2) {
+  border-right: 0.09375em solid #fff;
+  border-left: 0.09375em solid #fff;
+  padding: 0 4% 0 4%;
+}
+/* Form */
+form {
+  background-color: #00406c;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+select {
+  margin: 1em;
+}
+
+span{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5em;
+}
+
+input[type="checkbox"]{
+  margin-right: 0.5em;
+  width: 3.5%;
+}
+
+label {
+  margin-left: 0.3em;
+  margin-right: 1em;
+  width: 60%;
+}
+
+input[type="number"] {
+  width: 25%;
+}
+
+input[type="text"]{
+  margin: 0.6em;
+}
+
+button {
+  border: 0.1em solid #fff;
+  border-radius: 0.7em;
+  background-color: #003a61;
+  color: #fff;
+  cursor: pointer;
+  margin: 1em auto;
+  width: 70%;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+}
+footer p {
+  text-align: center;
+  margin: 0.4em;
+}
+ footer img {
+  margin: 0.4em;
+  width: 20%;
+ }
+
+ /* Media Queries */
+
+ @media screen and (min-width: 620px) {
+  .logo_header {
+    width: 20%;
+  }
+
+  .menu_list {
+    width: 90%;
+  }
+
+  .especiales_list {
+    width: 90%;
+  }
+  .platos_section div {
+    width: 50%;
+  }
+  .platos_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-container p {
+    display: block;
+    width: 100%;
+  }
+
+  button {
+    height: 2.5em;
+  }
+
+  span {
+    width: 30%;
+  }
+
+  input[type="number"] {
+    width: 35%;
+    height: 50%;
+  }
+
+  input[type="text"]{
+    width: 50%;
+  }
+
+  footer img {
+    width: 15%;
+  }
+ }
+
+ @media screen and (min-width: 1024px){
+  .logo_header {
+    width: 12%;
+  }
+  input[type="text"]{
+    width: 50%;
+  }
+  footer img {
+    width: 10%;
+  }
+ }
