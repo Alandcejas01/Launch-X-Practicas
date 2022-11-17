@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dulce Antojo</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <body class="bg-light">
+    <header>
+      <nav class="navbar navbar-expand-sm bg-primary">
+        <div class="container-fluid d-flex flex-column flex-sm-row p-0 fs-5">
+          <a class="navbar-brand m-0" href="#"><img src="../img/Logo Dulce Antojo.jpg" alt="Logo de dulce antojo" class="img-fluid rounded-circle" width="150" height="150"></a>
+          <button class="navbar-toggler pr-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../index.html">Principal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pedidos">Pedidos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <div class="container">
+        <section class="row">
+          <h2 class="col-12 my-3 mb-0 text-center fs-3"> Inventario: </h2>
+          <div class="col-sm-6">
+            <div class="table-responsive my-3 ">
+              <table class="table table-light table-bordered border-dark">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col" class="text-center">Cremas y decoracion</th>
+                    <th scope="col" class="text-center">Stock</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center fs-6">Crema de frutilla</td>
+                    <td class="text-center fs-6">5</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center fs-6">Crema de chocolate</td>
+                    <td class="text-center fs-6">5</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center fs-6">Crema de chantilly</td>
+                    <td class="text-center fs-6">5</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center fs-6">Dulce de leche</td>
+                    <td class="text-center fs-6">5</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center fs-6">Crema pastelera</td>
+                    <td class="text-center fs-6">5</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center fs-6">Fondant</td>
+                    <td class="text-center fs-6">5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="table-responsive my-3">
+              <table class="table table-light table-bordered border-dark">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col" class="text-center">Ingredientes</th>
+                    <th scope="col" class="text-center">Stock</th>
+  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center fs-6">Harina</td>
+                    <td class="text-center fs-6">5</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center fs-6">Azucar</td>
+                    <td class="text-center fs-6">5</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center fs-6">Huevos</td>
+                    <td class="text-center fs-6">5</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center fs-6">Chocolate amargo</td>
+                    <td class="text-center fs-6">5</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center fs-6">Esencia de vainilla</td>
+                    <td class="text-center fs-6">5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="row" id="pedidos">
+        <h2 class="col-12 my-3 mb-0 text-center fs-3"> Pedidos: </h2>
+        <div class="col-lg-12">
+          <table class="table table-light table-bordered border-dark pedidoTabla " id="pedidosTable">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col" class="text-center">Nombre Completo</th>
+                <th scope="col" class="text-center">Telefono</th>
+                <th scope="col" class="text-center">Correo electronico</th>
+                <th scope="col" class="text-center">Dirección</th>
+                <th scope="col" class="text-center">Descripcion del pedido</th>
+                <th scope="col" class="text-center">Tipo de bizcochuelo</th>
+                <th scope="col" class="text-center">Sabores de los rellenos</th>
+                <th scope="col" class="text-center">Decoración de la torta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center fs-6">Mariano Alfonzo</td>
+                <td class="fs-6" data-label="telefono:">+543871234567</td>
+                <td class="fs-6" data-label="email:">mariaexample@example.com</td>
+                <td class="fs-6" data-label="direccion:">Calle de ejemplo con numero Barrio de ejemplo </td>
+                <td class="fs-6 p-2" data-label="descripcion:">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi commodi magnam vitae accusamus repellendus veritatis reiciendis enim sint, molestias numquam distinctio beatae? Consequuntur nam deleniti officiis, eveniet minus ratione laudantium!
+                  Facilis autem sed exercitationem quaerat error dignissimos nisi porro, voluptatum modi, veritatis fugiat qui mollitia debitis ut ex officia eum beatae iusto cumque, saepe odit. Consequuntur molestiae tempora architecto a?</td>
+                  <td class="fs-6" data-label="tipoBizcochuelo:">Chocolate</td>
+                  <td class="fs-6" data-label="rellenos:">
+                    Frutilla <br> Chantilly <br> Chocolate
+                  </td>
+                  <td class="fs-6" data-label="decoracion:">Fondant</td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6">Leonel Palermo</td>
+                <td class="fs-6" data-label="telefono:">+543878974561</td>
+                <td class="fs-6" data-label="email:">leonelexample@example.com</td>
+                <td class="fs-6" data-label="direccion:">Calle de ejemplo con numero Barrio de ejemplo </td>
+                <td class="fs-6 p-2" data-label="descripcion:">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi commodi magnam vitae accusamus repellendus veritatis reiciendis enim sint, molestias numquam distinctio beatae? Consequuntur nam deleniti officiis, eveniet minus ratione laudantium!
+                  Facilis autem sed exercitationem quaerat error dignissimos nisi porro, voluptatum modi, veritatis fugiat qui mollitia debitis ut ex officia eum beatae iusto cumque, saepe odit. Consequuntur molestiae tempora architecto a?</td>
+                  <td class="fs-6" data-label="tipo-Bizcochuelo:">Vainilla</td>
+                  <td class="fs-6" data-label="rellenos:">Dulce de leche <br> Crema pastelera <br> Chocolate</td>
+                  <td class="fs-6" data-label="decoracion:">Merengue</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
