@@ -249,16 +249,34 @@ footer p {
     justify-content: center;
   }
 
-  .form-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  .form-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "menu              menu              menu"
+    "form-menu         form-menu         form-menu"
+    "guarnicion        guarnicion        guarnicion"
+    "form-guarniciones form-guarniciones form-guarniciones";
   }
 
-  .form-container p {
-    display: block;
-    width: 100%;
+  .p-menu{
+    grid-area: menu;
+  }
+  .form-menu {
+    grid-area: form-menu;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .p-guarniciones{
+    grid-area: guarnicion;
+    justify-self: center;
+  }
+  .form-guarniciones {
+    grid-area: form-guarniciones;
+    display: flex;
+    flex-flow: row wrap;
   }
 
   button {
@@ -271,7 +289,6 @@ footer p {
 
   input[type="number"] {
     width: 35%;
-    height: 50%;
   }
 
   input[type="text"]{

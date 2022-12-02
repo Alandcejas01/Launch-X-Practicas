@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Pokedex</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container-xl mx-auto bg-rose-200">
+    <header>
+      <nav class="bg-pink-300">
+        <h1 class="text-6xl text-center text-purple-50 py-4">Simple Pokedex</h1>
+      </nav>
+    </header>
+    <section
+      class="container mx-auto pokedex bg-red-700 min-h-screen grid grid-cols-2 grid-rows-3 my-2"
+    >
+      <div class="row-span-2 flex items-center justify-center w-full">
+        <div
+          class="border-2 border-emerald-100 flex justify-center items-center bg-gray-700 w-full sm:w-3/4    h-3/4 sm:h-2/4"
+          id="screen-pokemon"
+        >
+          <img class="w-3/4 md:w-2/4 lg:w-52 h-2/4 sm:h-3/4" id="pokeImage" />
+        </div>
+      </div>
+      <div class="row-span-2 w-full flex items-center justify-center">
+        <div
+          class="border-2 border-emerald-100 bg-gray-700 w-full h-3/4 sm:h-2/4 mx-1 sm:mx-3"
+          id="screen-info"
+        >
+          <span class="flex flex-col">
+            <p id="dexNumber" class="text-white mx-1 sm:mx-2 sm:my-1 capitalize"></p>
+            <p id="dexName" class="text-white mx-1 sm:mx-2 capitalize"></p>
+            <p id="dexHeight" class="text-white mx-1 sm:mx-2 capitalize"></p>
+            <p id="dexWeight" class="text-white mx-1 sm:mx-2 capitalize"></p>
+            <p id="dexDescription" class="mx-1 sm:mt-1 leading-5 text-white sm:mx-2"></p>
+          </span>
+        </div>
+      </div>
+      <div class="flex justify-center ">
+        <div class="botones flex flex-col items-center">
+          <button class="bg-stone-900 text-white w-10 h-10" id="btnArriba">
+            .
+          </button>
+          <span class="flex">
+            <button class="bg-stone-900 text-white w-10 h-10" id="btnIzquierda">
+              .
+            </button>
+            <button
+              disabled="disabled"
+              class="bg-stone-900 text-white w-10 h-10"
+            ></button>
+            <button class="bg-stone-900 text-white w-10 h-10" id="btnDerecha">
+              .
+            </button>
+          </span>
+          <button class="bg-stone-900 text-white w-10 h-10" id="btnAbajo">
+            .
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-col justify-start items-center">
+        <p class="lg:invisible text-white text-sm text-center m-1">Introduce el nombre del pokemon o numero (Hasta 898)</p>
+        <input type="text" id="inputPoke" placeholder="Introduce el nombre del pokemon o numero (Hasta 898)" class="w-11/12 h-8 text-sm text-center ">
+        <button class="mt-8 bg-blue-900 rounded-lg hover:bg-blue-700 h-1/4 w-2/4 text-white" id="searchButton">Buscar Pokemon</button>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
