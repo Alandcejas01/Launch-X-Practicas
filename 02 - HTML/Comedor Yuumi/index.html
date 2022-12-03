@@ -71,7 +71,7 @@
         <h3>Sucursal zona Norte</h3>
         <P>Horarios: de Lunes a Viernes 8:00 - 16:00</P>
       <div class="mapas">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115903.57092839785!2d-65.50066940157049!3d-24.795912659104125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses-419!2sar!4v1666131734422!5m2!1ses-419!2sar" width="80%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.9199723994725!2d-65.41937458228645!3d-24.729627568266274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc1121ef28739%3A0xb0f626a04f6f3349!2sAv.%20Memoria%20Verdad%20y%20Justicia%20400%2C%20Salta!5e0!3m2!1ses!2sar!4v1670079993006!5m2!1ses!2sar" width="80%" height="300" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <hr>
     </section>
@@ -87,7 +87,7 @@
     <form action="">
       <h2 id="pedidos">Haz tu pedido aquí</h2>
       <p>¿De que sucursal pides?</p>
-      <select name="sucursales" id="form-sucursales">
+      <select name="sucursales" id="form-sucursales" required>
         <option value="oeste" selected>Oeste</option>
         <option value="centro">Centro</option>
         <option value="norte">Norte</option>
@@ -184,13 +184,13 @@
 
       <div class="flex-col-center">
         <label for="nombre">Nombre: </label>
-        <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?">
+        <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?" required>
   
         <label for="telefono">Teléfono: </label>
-        <input type="text" id="telefono" name="telefono" placeholder="¿Cúal es tu numero de teléfono?">
+        <input type="text" id="telefono" name="telefono" placeholder="¿Cúal es tu numero de teléfono?" required>
   
         <label for="direccion">Dirección: </label>
-        <input type="text" id="direccion" name="direccion" placeholder="¿Cúal es tu dirección?">
+        <input type="text" id="direccion" name="direccion" placeholder="¿Cúal es tu dirección?" required>
       </div>
 
       <button type="submit">Enviar Pedido</button>
