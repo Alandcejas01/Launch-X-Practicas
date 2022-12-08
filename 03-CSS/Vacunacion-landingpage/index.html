@@ -1,13 +1,751 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Vaccination</title>
-</head>
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/1fa532a5b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./main.css" />
+    <title>Vaccination</title>
+  </head>
+  <body>
+    <div class="sm:grid sm:grid-cols-2">
+      <header
+        class="col-span-2 flex flex-col items-center justify-around  py-6 left-0  top-0  right-0 
+        sm:absolute sm:flex-row "
+      >
+        <h1
+          class="font-bold font-sans text-2xl text-blue-700 text-center
+          sm:ml-2 sm:w-1/5
+          md:ml-0"
+        >
+          Vaccination
+        </h1>
+        <nav class="flex flex-col justify-center 
+        sm:w-4/5 
+        lg:w-3/5 ">
+          <button
+            id="menu-btn"
+            class="flex justify-center mt-4 p-2 border border-blue-900 rounded
+            sm:hidden"
+          >
+            <svg
+              class="h-6 w-6 fill-current text-blue-900"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+          <ul
+            id="menu"
+            class="flex flex-col items-center justify-evenly gap-4 hidden  
+            sm:flex sm:flex-row sm:gap-0"
+          >
+            <li class="mt-4 font-semibold text-gray-500 text-md 
+            sm:mt-0">
+              Database
+            </li>
+            <li class="font-semibold text-md text-gray-500">Education</li>
+            <li class="font-semibold text-md text-gray-500">News</li>
+            <li class="font-semibold text-md text-gray-500">Regulation</li>
+            <li>
+              <button
+                class="flex justify-center items-center w-24 h-8 bg-blue-700 rounded  shadow-xl text-white
+                sm:w-32 sm:h-12 sm:text-md "
+                disabled
+              >
+                <p>Hoax Buster</p>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div
+        class="sm:grid sm:min-h-screen sm:items-center
+        md:grid-rows-[75%_25%]
+        lg:min-h-full sm:grid-rows-[80%_20%] lg:items-start lg:justify-items-center  
+        xl:grid-rows-[80%_20%]"
+      >
+        <section
+          class="flex justify-center mt-2
+          sm:mt-20
+          md:mt-16
+          lg:items-center lg:h-3/4
+          xl:items-end xl:mt-0"
+        >
+          <div class="sm:w-5/6 
+          lg:w-3/4">
+            <h2
+              class="font-bold text-4xl text-center text-sky-800
+              sm:text-start sm:text-5xl
+              lg:mt-16 
+              xl:text-6xl xl:mt-0"
+            >
+              Fight Virus <br />
+              With Vaccines
+            </h2>
+            <p
+              class="mt-6 px-4 font-medium text-center text-md text-gray-500
+              sm:px-0 sm:w-4/5  sm:text-left  sm:text-lg
+              md:mt-8"
+            >
+              Let's stop this pandemic by killing the virus with a vaccine,
+              don't let yourself and your family get infected
+            </p>
+            <ul
+              class="flex flex-col items-center justify-center  gap-4 mt-6 mb-6
+              sm:justify-start sm:mb-0
+              md:flex-row md:mt-12 
+              lg:gap-6"
+            >
+              <li class="flex justify-center w-full 
+              md:w-auto">
+                <p class="font-semibold text-blue-900 text-sm 
+                lg:text-lg">
+                  <i
+                    class="fa-solid fa-shield p-1 mr-8 bg-yellow-100 rounded-lg text-yellow-500
+                    sm:mr-4"
+                  ></i
+                  >Best protection
+                </p>
+              </li>
+              <li class="flex justify-center w-full 
+              md:w-auto">
+                <p class="font-semibold text-blue-900 text-sm 
+                lg:text-lg">
+                  <i
+                    class="fa-solid fa-star p-1 mr-4 bg-yellow-100 rounded-lg text-yellow-500"
+                  ></i
+                  >Selected vaccines
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section
+          class="w-3/4 mx-auto
+          sm:place-self-start sm:mx-0 sm:ml-4
+          md:place-self-auto   
+          lg:ml-0"
+        >
+          <p class="font-medium text-blue-900
+          lg:font-bold">
+            <i
+              class="fa-solid fa-clock p-1 mr-4 bg-blue-100 rounded-lg text-blue-900"
+            ></i
+            >Schedule your vaccinations
+          </p>
+          <ul
+            class="vac-form flex flex-col items-center justify-center gap-6 h-72 my-12 shadow-2xl
+            sm:grid sm:grid-cols-2 sm:place-content-center sm:gap-4 sm:absolute sm:h-44 sm:mt-0
+            md:flex md:flex-row md:items-center w-[97%] md:h-28    
+            lg:justify-evenly lg:w-5/6
+            xl:gap-10 xl:w-4/6"
+          >
+            <li
+              class="flex justify-center gap-6
+              sm:justify-start sm:items-start sm:gap-4 sm:pl-8
+              md:w-3/4 md:pl-2 
+              lg:pl-6"
+            >
+              <i
+                class="fa-solid fa-location-dot h-6 mt-1 p-1 bg-blue-100 rounded-lg text-blue-900 "
+              ></i>
+              <span class="w-[10.2rem] 
+              sm:w-auto">
+                <p class="w-full font-medium text-gray-500 ">Location</p>
+                <input
+                  id="location"
+                  type="text"
+                  placeholder="Jakarta Utara"
+                  class="w-full font-bold text-blue-900  text-lg "
+                />
+              </span>
+            </li>
+            <li
+              class="flex justify-center gap-6 w-full 
+              sm:justify-start sm:items-start sm:gap-4 sm:pl-8
+              md:w-2/4 md:pl-0 
+              lg:w-full"
+            >
+              <i
+                class="fa-solid fa-calendar-days h-6 mt-1 p-1 bg-blue-100 rounded-lg text-blue-900"
+              ></i>
+              <span>
+                <p class="font-medium text-gray-500">Date</p>
+                <input type="date" class="font-bold text-blue-900 " />
+              </span>
+            </li>
+            <li
+              class="flex justify-center gap-6 w-full mr-6 
+              sm:items-start sm:justify-start sm:gap-4 sm:mr-0 sm:pl-8   
+              md:w-2/4 md:pl-0  
+              lg:w-full"
+            >
+              <i
+                class="fa-solid fa-syringe h-6 mt-1 p-1 bg-blue-100 rounded-lg text-blue-900"
+              ></i>
+              <span>
+                <p class="font-medium text-gray-500">Vaccine Type</p>
+                <select
+                  id="vaccines"
+                  name="vaccines"
+                  class="bg-transparent font-bold text-blue-900 text-xl "
+                >
+                  <option value="astraZeneca">Astrazeneca</option>
+                  <option value="sinovac">Sinovac</option>
+                  <option value="pfizer">Pfizer</option>
+                  <option value="moderna">Moderna</option>
+                </select>
+              </span>
+            </li>
+            <li class="flex justify-center items-center 
+            md:w-2/4 
+            lg:w-3/4 ">
+              <button
+                class="flex justify-center items-center w-24 h-8 mx-auto shadow-xl bg-blue-700 rounded text-white
+                sm:w-28 sm:h-10 sm:text-md"
+                disabled
+              >
+                <p>Submit</p>
+              </button>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <figure
+        class="h-auto hidden
+        sm:flex sm:items-center sm:min-h-screen 
+        lg:min-h-full"
+      >
+        <img src="./assets/img/Nurse.png" alt="Enfermera" />
+      </figure>
+      <section
+        class="flex items-center justify-around flex-wrap pb-6
+        sm:col-span-2 sm:flex-nowrap sm:mt-24 sm:p-12 
+        md:mt-10"
+      >
+        <img
+          src="./assets/img/vaccines/astraZeneca.png"
+          alt="Vacuna Astrazeneca"
+          class="w-9/12 
+          sm:w-4/12 
+          lg:w-3/12"
+        />
+        <img
+          src="./assets/img/vaccines/sinovac.png"
+          alt="Vacuna Sinovac"
+          class="w-8/12 
+          sm:w-3/12 
+          lg:w-1/6"
+        />
+        <img
+          src="./assets/img/vaccines/pfizer.png"
+          alt="Vacuna Pfizer"
+          class="w-8/12 
+          sm:w-3/12 
+          lg:w-1/6"
+        />
+        <img
+          src="./assets/img/vaccines/moderna.png"
+          alt="Vacuna Moderna"
+          class="w-8/12 
+          sm:w-3/12 
+          lg:w-1/6"
+        />
+      </section>
+      <section class="flex flex-col items-center
+      sm:col-span-2 ">
+        <div class="px-4 
+        sm:w-11/12 sm:px-0 
+        xl:w-4/5">
+          <h2 class="font-bold text-4xl text-sky-800">Why should i vaccine?</h2>
+          <p
+            class="mt-8 
+            sm:w-3/5 sm:text-base
+            lg:w-2/5 text-gray-500 font-medium text-sm "
+          >
+            In order to avoid any doubts about getting the COVID-19 vaccine,
+            identify the following 4 benefits of COVID-19 vaccination:
+          </p>
 
-</body>
+          <ul
+            class="grid grid-cols-2 justify-items-center gap-2 mt-16 pb-6
+            sm:gap-6 sm:pb-14
+            md:pb-24
+            lg:flex lg:justify-evenly lg:gap-12"
+          >
+            <li
+              class="w-full pb-12 border-2 border-slate-50 hover:shadow hover:shadow-2xl
+              sm:p-2
+              lg:w-1/4"
+            >
+              <i
+                class="fa-solid fa-sliders h-10 p-3 bg-blue-100 rounded-lg text-blue-700"
+              ></i>
+              <h3 class="my-6 font-semibold text-sm text-blue-900
+              sm:text-base">
+                Minimize the spread of viruses
+              </h3>
+              <p class="font-medium text-gray-500 text-sm 
+              sm:text-base">
+                vaccine has been proven effective to prevent someone from
+                getting infected with Coronavirus
+              </p>
+            </li>
+            <li
+              class="w-full pb-12 border-2 border-slate-50 hover:shadow hover:shadow-2xl
+              sm:p-2
+              lg:w-1/4"
+            >
+              <i
+                class="fa-solid fa-shield h-10 p-3 bg-blue-100 rounded-lg text-blue-700"
+              ></i>
+              <h3 class="my-6 font-semibold text-sm text-blue-900
+              sm:text-base">
+                Farming antibodies
+              </h3>
+              <p class="font-medium text-gray-500 text-sm 
+              sm:text-base">
+                COVID-19 vaccine proven to help shape antibody response for
+                inmune system
+              </p>
+            </li>
+            <li
+              class="w-full pb-12 border-2 border-slate-50 hover:shadow hover:shadow-2xl
+              sm:p-4
+              lg:w-1/4"
+            >
+              <i
+                class="fa-solid fa-users h-10 p-3 bg-blue-100 rounded-lg text-blue-700"
+              ></i>
+              <h3 class="my-6 font-semibold text-sm text-blue-900
+              sm:text-base ">
+                Protecting people nearby
+              </h3>
+              <p class="font-medium text-gray-500  text-sm 
+              sm:text-base">
+                The benefits of COVID-19 vaccination are the vaccine that we get
+                can also help protect people around us
+              </p>
+            </li>
+            <li
+              class="w-full pb-12 border-2 border-slate-50 hover:shadow hover:shadow-2xl
+              sm:p-2
+              lg:w-1/4"  
+            >
+              <i
+                class="fa-solid fa-square-arrow-up-right h-10 mt-4 p-3 bg-blue-100 rounded-lg text-blue-700
+                sm:mt-0"
+              ></i>
+              <h3 class="my-6 font-semibold text-sm text-blue-900
+              sm:text-base">
+                Creating group immunity
+              </h3>
+              <p class="font-medium text-gray-500 text-sm 
+              sm:text-base">
+                COVID-19 vaccination is also immunity or herd immunity
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="pb-12
+    sm:grid sm:grid-cols-[42%_58%]">
+      <figure class="hidden
+      sm:flex sm:items-center ">
+        <img
+          src="./assets/img/miss.png"
+          class="h-[28rem] 
+          md:h-[32rem] 
+          lg:h-auto"
+          alt="Una señora"
+        />
+      </figure>
+      <section class="px-4 
+      sm:pr-0 sm:pl-6 
+      md:pl-8 
+      lg:pl-14 
+      xl:px-14">
+        <h2 class="font-bold text-4xl text-blue-900
+        xl:text-5xl">
+          Preparations Before Vaccine
+        </h2>
+        <p
+          class=" mt-4 my-8 font-semibold text-sm text-gray-500
+          sm:w-11/12 
+          md:text-md
+          xl:w-10/12 xl:text-lg "
+        >
+          The success of vaccines is strongly influenced by the strength of the
+          body's immune system. Therefore, there are several things that can be
+          tried to make the COVID-19 vaccine work:
+        </p>
+        <ul
+          class="mt-18
+          sm:w-5/6
+          lg:ml-4
+          xl:w-4/6 xl:ml-10"
+        >
+          <li class="flex flex-col justify-between my-5 
+          xl:my-10">
+            <span class="accordion-header flex justify-between gap-4">
+              <span class="flex items-center gap-4">
+                <i
+                  class="fa-solid fa-shield p-2 bg-blue-100 rounded-lg text-blue-700"
+                ></i>
+                <h3 class="font-bold text-sm text-blue-900
+                sm:text-base">
+                  Avoid alcoholic beverages
+                </h3>
+              </span>
+              <i
+                class="fa-sharp fa-solid fa-caret-down p-2 bg-blue-100 rounded-lg text-blue-700"
+              ></i>
+            </span>
+            <div class="accordion-body w-5/6 mt-2 pl-10 ">
+              <p class="font-medium text-gray-500 text-sm">
+                Stress has profound effect on immune work. Moreover, prolonged
+                stress can increase cortisol production and oxidative stress in
+                the body
+              </p>
+            </div>
+          </li>
+          <li class="flex flex-col justify-between my-5 
+          xl:my-10">
+            <span class="accordion-header flex justify-between  gap-4">
+              <span class="flex items-center gap-4">
+                <i
+                  class="fa-solid fa-square-xmark p-2  bg-blue-100 rounded-lg text-blue-700"
+                ></i>
+                <h3 class="text-sm sm:text-base font-bold text-blue-900">
+                  Avoid stress
+                </h3>
+              </span>
+              <i
+                class="fa-sharp fa-solid fa-caret-down p-2 bg-blue-100 rounded-lg text-blue-700 "
+              ></i>
+            </span>
+            <div class="accordion-body w-5/6 mt-2 pl-10 ">
+              <p class="font-medium text-gray-500  text-sm">
+                Stress has profound effect on immune work. Moreover, prolonged
+                stress can increase cortisol production and oxidative stress in
+                the body
+              </p>
+            </div>
+          </li>
+          <li class="flex flex-col justify-between my-5 
+          xl:my-10 ">
+            <span class="accordion-header flex justify-between  gap-4">
+              <span class="flex items-center gap-4">
+                <i
+                  class="fa-solid fa-square-check p-2 bg-blue-100 rounded-lg  text-blue-700"
+                ></i>
+                <h3 class="font-bold text-sm text-blue-900
+                sm:text-base ">
+                  Eat healthy food
+                </h3>
+              </span>
+              <i
+                class="fa-sharp fa-solid fa-caret-down p-2 bg-blue-100 rounded-lg text-blue-700 "
+              ></i>
+            </span>
+            <div class="accordion-body w-5/6 mt-2 pl-10 ">
+              <p class="font-medium text-gray-500 text-sm">
+                Stress has profound effect on immune work. Moreover, prolonged
+                stress can increase cortisol production and oxidative stress in
+                the body
+              </p>
+            </div>
+          </li>
+          <li class="flex flex-col justify-between my-5 
+          xl:my-10 ">
+            <span class="accordion-header flex justify-between gap-4">
+              <span class="flex items-center gap-4">
+                <i
+                  class="fa-solid  fa-chart-simple p-2 bg-blue-100 rounded-lg  text-blue-700"
+                ></i>
+                <h3 class="text-sm sm:text-base font-bold text-blue-900">
+                  Get enought sleep
+                </h3>
+              </span>
+              <i
+                class="fa-sharp fa-solid fa-caret-down p-2 bg-blue-100 rounded-lg text-blue-700 "
+              ></i>
+            </span>
+            <div class="accordion-body w-5/6 mt-2 pl-10 ">
+              <p class="font-medium text-gray-500 text-sm">
+                Stress has profound effect on immune work. Moreover, prolonged
+                stress can increase cortisol production and oxidative stress in
+                the body
+              </p>
+            </div>
+          </li>
+          <li class="flex flex-col justify-between 
+          xl:my-16 ">
+            <span class="accordion-header flex justify-between  gap-4">
+              <span class="flex items-center gap-4">
+                <i
+                  class="fa-solid fa-heart p-2 rounded-lg bg-blue-100 text-blue-700"
+                ></i>
+                <h3 class="font-bold text-sm text-blue-900  
+                sm:text-base">
+                  Exercise or physical activity
+                </h3>
+              </span>
+              <i
+                class="fa-sharp fa-solid fa-caret-down p-2 bg-blue-100 rounded-lg text-blue-700"
+              ></i>
+            </span>
+            <div class="accordion-body w-5/6 mt-2 pl-10 ">
+              <p class="font-medium text-gray-500 text-sm">
+                Stress has profound effect on immune work. Moreover, prolonged
+                stress can increase cortisol production and oxidative stress in
+                the body
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="pb-12
+    sm:grid sm:grid-cols-[58%_42%]">
+      <section>
+        <div
+          class="h-1/3 mx-4 
+          sm:flex sm:flex-col sm:justify-center sm:mx-0 sm:ml-8 
+          lg:w-3/4"
+        >
+          <h2 class="font-bold text-4xl text-blue-900">Emergency Contact</h2>
+          <p
+            class="w-full mt-8 font-medium text-gray-500 text-sm
+            sm:ml-1 sm:text-md
+            md:w-3/4  
+            lg:ml-0 lg:w-full
+            xl:text-lg"
+          >
+            Contact one of the contacts below if you or your family feel unwell
+            and have similar symptoms such as Covid-19, make sure you also take
+            care of yourself before reporting to us.
+          </p>
+        </div>
+        <ul
+          class="grid grid-cols-2 grid-rows-2 gap-4 mt-6 mr-4 pb-8
+          sm:h-2/3 sm:ml-4 sm:pb-12
+          md:w-5/6 md:mt-12 md:mr-0 md:ml-8 
+          lg:mx-auto lg:mt-0 lg:justify-items-center lg:pb-0"
+        >
+          <li
+            class="flex flex-col items-center justify-center w-full p-2 border-2 border-slate-50 hover:shadow-2xl
+            md:p-4
+            lg:w-10/12 lg:px-8"
+          >
+            <span class="flex gap-4 w-full">
+              <i
+                class="fa-solid fa-phone-volume p-2 bg-blue-100 rounded-lg text-blue-700 text-2xl"
+              ></i>
+              <div>
+                <h3 class="font-semibold text-blue-900">Call</h3>
+                <p class="mt-2 font-medium text-gray-500 text-xs ">
+                  021.123.145.14
+                </p>
+              </div>
+            </span>
+            <button
+              class="w-full h-3/5 mt-8 bg-blue-100 font-bold text-blue-700 hover:bg-blue-700 hover:text-white
+              sm:h-1/5"
+              disabled
+            >
+              Call Now
+            </button>
+          </li>
+          <li
+            class="flex flex-col items-center justify-center w-full p-2 border-2 border-slate-50 hover:shadow-2xl
+            md:p-4
+            lg:w-10/12 lg:px-8"
+          >
+            <span class="flex gap-4 w-full ">
+              <i
+                class="fa-solid fa-comment-dots p-2 bg-blue-100 rounded-lg text-blue-700 text-2xl"
+              ></i>
+              <div>
+                <h3 class="font-semibold text-blue-900">Chat</h3>
+                <p class="mt-2 font-medium text-gray-500 text-xs">
+                  021.123.145.14
+                </p>
+              </div>
+            </span>
+            <button
+              class="w-full h-3/5 mt-8 font-bold text-blue-700 bg-blue-100 hover:bg-blue-700 hover:text-white
+              sm:h-1/5 "
+              disabled
+            >
+              Chat Now
+            </button>
+          </li>
+          <li
+            class="flex flex-col items-center justify-center w-full p-2 border-2 border-slate-50 hover:shadow-2xl
+            md:p-4
+            lg:w-10/12 lg:px-8"
+          >
+            <span class="flex gap-4 w-full">
+              <i
+                class="fa-solid fa-video p-2 bg-blue-100 rounded-lg text-blue-700  text-2xl"
+              ></i>
+              <div>
+                <h3 class="font-semibold text-blue-900 ">Video Call</h3>
+                <p class="mt-2 font-medium text-gray-500 text-xs">
+                  021.123.145.14
+                </p>
+              </div>
+            </span>
+            <button
+              class="w-full h-3/5 mt-8 bg-blue-100 font-bold text-blue-700 hover:bg-blue-700 hover:text-white 
+              sm:h-1/5 "
+              disabled
+            >
+              Video Call Now
+            </button>
+          </li>
+          <li
+            class="flex flex-col items-center justify-center w-full p-2 border-2 border-slate-50 hover:shadow-2xl
+            md:p-4
+            lg:w-10/12 lg:px-8"
+          >
+            <span class="flex gap-4 w-full">
+              <i
+                class="fa-solid fa-envelope p-2 bg-blue-100 rounded-lg text-blue-700 text-2xl"
+              ></i>
+              <div class="flex flex-col">
+                <h3 class="font-semibold text-blue-900 ">Message</h3>
+                <p class="mt-2 font-medium text-gray-500 text-xs">
+                  021.123.145.14
+                </p>
+              </div>
+            </span>
+            <button
+              class="w-full h-3/5 mt-8 bg-blue-100 font-bold text-blue-700 hover:bg-blue-700 hover:text-white   
+              sm:h-1/5"
+              disabled
+            >
+              Message Now
+            </button>
+          </li>
+        </ul>
+      </section>
+      <figure class="hidden 
+      sm:flex sm:items-center">
+        <img src="./assets/img/doc.png" alt="Doctor" />
+      </figure>
+    </div>
+    <footer
+      class="px-4 bg-blue-50
+      sm:grid sm:grid-cols-2 sm:grid-rows-[85%_15%] sm:px-0 "
+    >
+      <div
+        class="flex flex-col justify-center items-center h-4/5 py-4
+        sm:items-start sm:ml-4 sm:py-20 
+        md:w-3/4 md:mx-auto"
+      >
+        <h2 class="font-semibold text-blue-700 text-4xl 
+        sm:text-3xl">
+          Vaccination
+        </h2>
+        <p
+          class=" mt-4 font-medium text-sm text-gray-500
+          sm:w-3/4 sm:text-base 
+          lg:w-2/4 
+          xl:w-1/3"
+        >
+          Our goal is to help the world free from the ongoing pandemic
+        </p>
+      </div>
+      <div
+        class="flex justify-between gap-2 py-8
+        sm:mr-4 sm:py-12
+        md:justify-evenly md:mr-0"
+      >
+        <section>
+          <h3 class="font-bold text-blue-900 text-lg 
+          sm:text-xl">About</h3>
+          <ul class="flex flex-col gap-4 mt-4">
+            <li class="font-medium text-gray-500 text-xs 
+            sm:text-sm">
+              About us
+            </li>
+            <li class="font-medium text-gray-500 text-xs 
+            sm:text-sm">
+              Features
+            </li>
+            <li class="font-medium text-gray-500 text-xs 
+            sm:text-sm">
+              News & Blog
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3 class="font-bold text-blue-900 text-lg 
+          sm:text-xl">Company</h3>
+          <ul class="flex flex-col gap-4 mt-4">
+            <li class="font-medium text-gray-500 text-xs 
+            sm:text-sm">
+              How We Work?
+            </li>
+            <li class="font-medium text-gray-500 text-xs 
+            sm:text-sm">
+              Capital
+            </li>
+            <li class="font-medium text-gray-500 text-xs 
+            sm:text-sm">
+              Security
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3 class="font-bold text-blue-900 text-lg 
+          sm:text-xl">Support</h3>
+          <ul class="flex flex-col gap-4 mt-4">
+            <li class="font-medium text-gray-500 text-xs 
+            sm:text-sm">FAQs</li>
+            <li class="font-medium text-gray-500 text-xs 
+            sm:text-sm">
+              Support Center
+            </li>
+            <li class="font-medium text-gray-500 text-xs 
+            sm:text-sm">
+              Contact US
+            </li>
+          </ul>
+        </section>
+      </div>
+      <p
+        class="mx-auto font-medium text-xs text-center text-gray-500 
+        sm:text-base sm:text-left
+        md:w-3/4"
+      >
+        &copy;2021 Vaccination. All rights reserved
+      </p>
+      <span class="flex justify-end gap-4 w-5/6 mt-4 pb-4 
+      sm:pb-0 sm:my-0">
+        <p class="font-medium text-gray-500 text-xs 
+        sm:text-sm 
+        md:text-base">
+          Terms & Agreements
+        </p>
+        <p class="font-medium text-gray-500 text-xs 
+        sm:text-sm 
+        md:text-base">
+          Privacy Policy
+        </p>
+      </span>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
 </html>
