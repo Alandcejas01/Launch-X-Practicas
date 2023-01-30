@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora en JS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <header class="bg-blue-300 h-24 flex items-center justify-center">
+      <h1 class="font-bold text-5xl text-center text-slate-50">
+        Calculadora Simple JS
+      </h1>
+    </header>
+    <main class="container min-h-screen mx-auto">
+      <div
+        class="w-11/12 min-h-screen mx-auto my-4 bg-stone-700 grid grid-cols-5 grid-rows-[repeat(9,_minmax(0,_1fr))] md:w-2/4"
+      >
+        <div></div>
+        <div class="col-span-5 bg-zinc-500 mx-4 flex gap-4 px-4 py-2">
+          <h2>Valor</h2>
+          <h2>Operador</h2>
+          <h2>Valor</h2>
+        </div>
+        <div class="col-span-5 bg-zinc-500 mx-4 flex items-end justify-end">
+          <h2 class="text-center px-8 pb-4">Result</h2>
+        </div>
+        <section class="col-span-5 flex gap-4">
+          <button
+            data-operation
+            class="w-1/4 h-3/4 bg-zinc-900 text-white rounded-full flex justify-center items-center m-auto"
+          >
+            Raiz Cuadrada
+          </button>
+          <button
+            data-operation
+            class="w-1/4 h-3/4 bg-zinc-900 text-white rounded-full flex justify-center items-center m-auto"
+          >
+            Potencia
+          </button>
+        </section>
+        <button
+          data-number
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full"
+        >
+          7
+        </button>
+        <button
+          data-number
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full"
+        >
+          8
+        </button>
+        <button
+          data-number
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full"
+        >
+          9
+        </button>
+        <button
+          data-delete
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-red-900 text-white rounded-full"
+        >
+          DEL
+        </button>
+        <button
+          data-all-clear
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-red-900 text-white rounded-full"
+        >
+          AC
+        </button>
+        <button
+          data-number
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full"
+        >
+          4
+        </button>
+        <button
+          data-number
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full"
+        >
+          5
+        </button>
+        <button
+          data-number
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full"
+        >
+          6
+        </button>
+        <button
+          data-operation
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full text-lg md:text-2xl flex items-center justify-center"
+        >
+          *
+        </button>
+        <button
+          data-operation
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full text-lg md:text-2xl flex items-center justify-center"
+        >
+          /
+        </button>
+        <button
+          data-number
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full"
+        >
+          1
+        </button>
+        <button
+          data-number
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full"
+        >
+          2
+        </button>
+        <button
+          data-number
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full"
+        >
+          3
+        </button>
+        <button
+          data-operation
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full text-lg md:text-2xl flex items-center justify-center"
+        >
+          +
+        </button>
+        <button
+          data-operation
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full text-lg md:text-2xl flex items-center justify-center"
+        >
+          -
+        </button>
+        <button
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full"
+        >
+          0
+        </button>
+        <button
+          data-number
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full text-lg md:text-2xl flex items-center justify-center"
+        >
+          .
+        </button>
+        <button
+          data-ans
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full"
+        >
+          ANS
+        </button>
+        <button
+          data-operation
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full text-lg md:text-2xl flex items-center justify-center"
+        >
+          %
+        </button>
+        <button
+          data-equals
+          class="w-3/4 h-3/4 m-auto md:p-4 bg-zinc-900 text-white rounded-full text-lg md:text-2xl flex items-center justify-center"
+        >
+          =
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
